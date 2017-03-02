@@ -1,0 +1,13 @@
+
+
+
+# This task configures /etc/network/interfaces on ifupdown2. The variables for
+# which interfaces are neighbors and networks come from the group_vars/all file.
+- name: configure networking
+  nclu:
+      atomic: true
+      description: "configure all the newtorking"
+      commands: 
+         -  "add interface eth0 ip address dhcp"
+         -  "add loopback lo ip address 10.0.0.1/32"
+         -  "add interface swp1"
