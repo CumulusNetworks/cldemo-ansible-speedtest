@@ -1,0 +1,8 @@
+---
+- hosts:
+    - leafs
+  user: cumulus
+  become: yes
+  become_method: sudo
+  roles:
+    - networking-nclu

@@ -1,0 +1,13 @@
+
+
+
+# This task configures /etc/network/interfaces on ifupdown2. The variables for
+# which interfaces are neighbors and networks come from the group_vars/all file.
+- name: configure networking
+  command: "{{ item }}"
+  with_items:
+    - 'net abort'
+    - 'net add interface eth0 ip address dhcp'
+    - 'net add loopback lo ip address 10.0.0.1/32'
+    - 'net add inteface swp1'
+    - 'net commit'
