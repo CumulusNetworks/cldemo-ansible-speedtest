@@ -1,5 +1,46 @@
 commandlist:
  - add int swp1
+ - add int swp1 bridge access 10
+ - add int swp1 bridge access 20
+ - add int swp1 bridge access 30
+ - add int swp1 bridge access 40
+ - add int swp1 bridge access 50
+ - add int swp1 bridge access 60
+ - add int swp1 bridge access 70
+ - add int swp1 bridge access 80
+ - add int swp1 bridge access 90
+ - add int swp1 bridge access 100
+ - add int swp1 bridge access 110
+ - add int swp1 bridge access 120
+ - add int swp1 bridge access 130
+ - add int swp1 bridge access 140
+ - add int swp1 bridge access 150
+ - add int swp1 bridge access 160
+ - add int swp1 bridge access 170
+ - add int swp1 bridge access 180
+ - add int swp1 bridge access 190
+ - add int swp1 bridge access 200
+ - add int swp1 bridge access 210
+ - add int swp1 bridge access 220
+ - add int swp1 bridge access 230
+ - add int swp1 bridge access 240
+ - add int swp1 bridge access 250
+ - add int swp1 bridge access 260
+ - add int swp1 bridge access 270
+ - add int swp1 bridge access 280
+ - add int swp1 bridge access 290
+ - add int swp1 bridge access 300
+ - add int swp1 bridge access 310
+ - add int swp1 bridge access 320
+ - add int swp1 bridge access 330
+ - add int swp1 bridge access 340
+ - add int swp1 bridge access 350
+ - add int swp1 bridge access 360
+ - add int swp1 bridge access 370
+ - add int swp1 bridge access 380
+ - add int swp1 bridge access 390
+ - add int swp1 bridge access 400
+ - add int swp1 bridge access 410
  - add int swp50
 fixlist:
  - del int swp1
