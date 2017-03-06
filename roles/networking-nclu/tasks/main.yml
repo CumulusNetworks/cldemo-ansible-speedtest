@@ -7,4 +7,4 @@
   nclu:
       atomic: true
       description: "configure all the newtorking"
-      commands: commandlist
+      commands: "{{ commandlist }}"
