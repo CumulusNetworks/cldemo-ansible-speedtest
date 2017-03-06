@@ -7,7 +7,4 @@
   nclu:
       atomic: true
       description: "configure all the newtorking"
-      commands: 
-         -  "add interface eth0 ip address dhcp"
-         -  "add loopback lo ip address 10.0.0.1/32"
-         -  "add interface swp1"
+      commands: {{ commandlist }}
