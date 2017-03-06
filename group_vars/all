@@ -41,6 +41,5 @@ commandlist:
  - add int swp1 bridge access 390
  - add int swp1 bridge access 400
  - add int swp1 bridge access 410
- - add int swp50
 fixlist:
  - del int swp1
