@@ -3,12 +3,8 @@
 
 # This task configures /etc/network/interfaces on ifupdown2. The variables for
 # which interfaces are neighbors and networks come from the group_vars/all file.
-- name: cleanup
+- name: configure networking
   nclu:
       atomic: true
       description: "cleanup"
-      commands:
-         -  "add interface eth0 ip address dhcp"
-         -  "add loopback lo ip address 10.0.0.1/32"
-         -  "del interface swp1"
-         -  "del interface swp2"
+      commands: "{{ fixlist }}"
