@@ -7,4 +7,7 @@
   nclu:
       atomic: true
       description: "configure all the newtorking"
-      commands: "{{ commandlist }}"
+      template: |
+           {% for i in range(count) %}
+           add int swp1 bridge access {{10+i}}
+           {% endfor %}

@@ -8,8 +8,8 @@
 # This task configures /etc/network/interfaces on ifupdown2. The variables for
 # which interfaces are neighbors and networks come from the group_vars/all file.
 - name: configure networking
-  command: "net {{ item }}"
-  with_items: "{{ commandlist }}"
+  command: "net {{ 10+item }}"
+  with_items: "{{ range(count) }}"
 
 - name: configure networking
   command: "net commit"
