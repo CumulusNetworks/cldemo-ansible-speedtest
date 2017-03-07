@@ -8,7 +8,7 @@
 # This task configures /etc/network/interfaces on ifupdown2. The variables for
 # which interfaces are neighbors and networks come from the group_vars/all file.
 - name: configure networking
-  command: "net int swp1 bridge access {{ item }}"
+  command: "net add int swp1 bridge access {{ item }}"
   with_items: "{{ range(10+(count|int))|list }}"
 
 - name: configure networking
