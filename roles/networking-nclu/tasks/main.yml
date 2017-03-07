@@ -8,6 +8,6 @@
       atomic: true
       description: "configure all the newtorking"
       template: |
-           {% for i in range(int(count)) %}
+           {% for i in range(count|int) %}
            add int swp1 bridge access {{10+i}}
            {% endfor %}

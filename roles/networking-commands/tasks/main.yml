@@ -9,7 +9,7 @@
 # which interfaces are neighbors and networks come from the group_vars/all file.
 - name: configure networking
   command: "net {{ 10+item }}"
-  with_items: "{{ range(int(count)) }}"
+  with_items: "{{ range(count|int) }}"
 
 - name: configure networking
   command: "net commit"
