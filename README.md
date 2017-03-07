@@ -2,12 +2,6 @@ HOW TO TEST
 ===========
 
  * Install Ansible from Source
- * pick a test, such as run-commands.yml
- * run the following three commands:
-    * ansible-playbook run-cleanup.yml
-    * time ansible-playbook run-commands.yml
-    * time ansible-playbook run-commands.yml
- * the first time you run the command, you see how long it takes to change
-   the switch.
- * the second time, you see how long it takes when there are no changes
-   required
+
+for i in {1..100}; do (time ansible-playbook run-commands.yml --extra-vars count=10 &> /dev/null) 2>&1 >/dev/null | grep real | cut -d "m" -f 2 | cut -d "s" -f 1 >> commands.csv; done
+for i in {1..100}; do (time ansible-playbook run-nclu.yml --extra-vars count=10 &> /dev/null) 2>&1 >/dev/null | grep real | cut -d "m" -f 2 | cut -d "s" -f 1 >> nclu.csv; done
